@@ -834,12 +834,12 @@ def get_urdf_flags(cache=False, cylinder=False, merge=False, sat=False):
     #flags |= p.URDF_USE_INERTIA_FROM_FILE
     return flags
 
-def load_pybullet(filename, fixed_base=False, scale=1., base_pos=[0, 0, 0], **kwargs):
+def load_pybullet(filename, fixed_base=False, scale=1., base_pos=[0, 0, 0], base_ori=[0, 0, 0, 1], **kwargs):
     # fixed_base=False implies infinite base mass
     with LockRenderer():
         if filename.endswith('.urdf'):
             flags = get_urdf_flags(**kwargs)
-            body = p.loadURDF(filename, basePosition=base_pos, useFixedBase=fixed_base, flags=flags,
+            body = p.loadURDF(filename, basePosition=base_pos, baseOrientation=base_ori, useFixedBase=fixed_base, flags=flags,
                               globalScaling=scale, physicsClientId=CLIENT)
         elif filename.endswith('.sdf'):
             body = p.loadSDF(filename, physicsClientId=CLIENT)
