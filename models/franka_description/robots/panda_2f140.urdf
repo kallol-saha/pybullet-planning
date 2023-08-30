@@ -34,7 +34,8 @@
     <parent link="panda_link0"/>
     <child link="panda_link1"/>
     <axis xyz="0 0 1"/>
-    <limit effort="87" lower="-2.8973" upper="2.8973" velocity="2.1750"/>
+    <!-- <limit effort="87" lower="-2.8973" upper="2.8973" velocity="2.1750"/> -->
+    <limit effort="87" lower="-2.7" upper="2.7" velocity="2.1750"/>
   </joint>
   <link name="panda_link2">
     <visual>
@@ -54,7 +55,8 @@
     <parent link="panda_link1"/>
     <child link="panda_link2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="87" lower="-1.7628" upper="1.7628" velocity="2.1750"/>
+    <!-- <limit effort="87" lower="-1.7628" upper="1.7628" velocity="2.1750"/> -->
+    <limit effort="87" lower="-1.65" upper="1.65" velocity="2.1750"/>
   </joint>
   <link name="panda_link3">
     <visual>
@@ -74,7 +76,8 @@
     <parent link="panda_link2"/>
     <child link="panda_link3"/>
     <axis xyz="0 0 1"/>
-    <limit effort="87" lower="-2.8973" upper="2.8973" velocity="2.1750"/>
+    <!-- <limit effort="87" lower="-2.8973" upper="2.8973" velocity="2.1750"/> -->
+    <limit effort="87" lower="-2.7" upper="2.7" velocity="2.1750"/>
   </joint>
   <link name="panda_link4">
     <visual>
@@ -94,7 +97,8 @@
     <parent link="panda_link3"/>
     <child link="panda_link4"/>
     <axis xyz="0 0 1"/>
-    <limit effort="87" lower="-3.0718" upper="-0.0698" velocity="2.1750"/>
+    <!-- <limit effort="87" lower="-3.0718" upper="-0.0698" velocity="2.1750"/> -->
+    <limit effort="87" lower="-2.95" upper="-0.08" velocity="2.1750"/>
   </joint>
   <link name="panda_link5">
     <visual>
@@ -114,7 +118,8 @@
     <parent link="panda_link4"/>
     <child link="panda_link5"/>
     <axis xyz="0 0 1"/>
-    <limit effort="12" lower="-2.8973" upper="2.8973" velocity="2.6100"/>
+    <!-- <limit effort="12" lower="-2.8973" upper="2.8973" velocity="2.6100"/> -->
+    <limit effort="12" lower="-2.7" upper="2.7" velocity="2.6100"/>
   </joint>
   <link name="panda_link6">
     <visual>
@@ -134,7 +139,8 @@
     <parent link="panda_link5"/>
     <child link="panda_link6"/>
     <axis xyz="0 0 1"/>
-    <limit effort="12" lower="-0.0175" upper="3.7525" velocity="2.6100"/>
+    <!-- <limit effort="12" lower="-0.0175" upper="3.7525" velocity="2.6100"/> -->
+    <limit effort="12" lower="-0.0" upper="3.65" velocity="2.6100"/>
   </joint>
   <link name="panda_link7">
     <visual>
@@ -154,7 +160,8 @@
     <parent link="panda_link6"/>
     <child link="panda_link7"/>
     <axis xyz="0 0 1"/>
-    <limit effort="12" lower="-2.8973" upper="2.8973" velocity="2.6100"/>
+    <!-- <limit effort="12" lower="-2.8973" upper="2.8973" velocity="2.6100"/> -->
+    <limit effort="12" lower="-2.7" upper="2.7" velocity="2.6100"/>
   </joint>
   <link name="panda_link8"/>
   <joint name="panda_joint8" type="fixed">
